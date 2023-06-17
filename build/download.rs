@@ -210,7 +210,7 @@ pub fn download_nethost(target: &str, target_path: &Path) -> Result<(), Box<dyn 
         }
 
         if let Some(ext) = out_path.extension() {
-            if !(ext == "a" || ext == "lib" || ext == "pdb") {
+            if !(ext == "a" || ext == "lib" || ext == "pdb" || ext == "dll") {
                 continue;
             }
         } else {
